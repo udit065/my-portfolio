@@ -1,0 +1,176 @@
+{
+  "profile": {
+    "name": "Udit Yadav",
+    "role": "Software Engineer",
+    "tagline": "I build full-stack web and mobile apps with the MERN stack, from fintech platforms to real-time dashboards.",
+    "location": "Noida, India",
+    "email": "udityadav133@gmail.com",
+    "resume": "/Udit-Yadav-Resume.pdf",
+    "socials": {
+      "github": "https://github.com/udit065",
+      "linkedin": "https://www.linkedin.com/in/udit-yadav065"
+    },
+    "about": [
+      "I'm a software engineer who enjoys turning ideas into reliable, scalable products. Right now I work on a payment gateway aggregation platform, where I build modules that route transactions across providers, automate chargebacks and keep merchant data private.",
+      "I work across the stack: React and Next.js on the front, Node.js, Express and NestJS on the back, and MongoDB, SQL and Redis underneath. Outside work, I build mobile apps with React Native and small tools that solve real problems for real businesses."
+    ],
+    "stats": [
+      { "label": "Years building for the web", "value": "2+" },
+      { "label": "Public projects", "value": "25+" },
+      { "label": "B.Tech CGPA", "value": "9.1" }
+    ]
+  },
+  "experience": [
+    {
+      "company": "Gurukulastic Pvt. Ltd.",
+      "role": "Jr. Software Engineer",
+      "period": "Jan 2025 – Present",
+      "location": "Noida",
+      "points": [
+        "Contributed to a payment gateway aggregation platform that integrates multiple payment providers and routes each transaction to the best one.",
+        "Designed and built a Chargeback Module that automates refund and dispute workflows.",
+        "Built a Merchant Alias System that masks merchant identities across the portal to prevent data leakage.",
+        "Built real-time monitoring dashboards and Telegram alert bots that track merchant and provider success rates and flag problems early."
+      ]
+    },
+    {
+      "company": "Bonanza Interactive LLP",
+      "role": "Software Developer",
+      "period": "Nov 2023 – Dec 2024",
+      "location": "Noida",
+      "points": [
+        "Built responsive React interfaces, covering components, state management and routing.",
+        "Worked with designers and backend developers to ship game features that increased user engagement.",
+        "Optimized performance and added GSAP animations, making the site up to 15% more responsive."
+      ]
+    },
+    {
+      "company": "Sveltetech Technology Pvt. Ltd.",
+      "role": "Front End Developer Intern",
+      "period": "May 2023 – Oct 2023",
+      "location": "Gurgaon",
+      "points": [
+        "Built and maintained client UIs with React, Tailwind CSS, React Bootstrap and Material UI.",
+        "Used Git and agile practices as part of the development team."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Guru Tegh Bahadur Institute of Technology",
+      "degree": "B.Tech, Computer Science & Engineering",
+      "period": "2020 – 2023",
+      "detail": "CGPA 9.1 / 10"
+    },
+    {
+      "school": "Guru Nanak Dev Institute of Technology",
+      "degree": "Diploma, Computer Engineering",
+      "period": "2017 – 2020",
+      "detail": "CGPA 7.3 / 10"
+    }
+  ],
+  "projects": [
+    {
+      "slug": "telegram-dashboard",
+      "title": "Telegram Bot Dashboard",
+      "category": "Full-stack",
+      "featured": true,
+      "description": "Real-time admin dashboard for a Telegram bot. Incoming messages stream in live over Socket.IO. Admins can reply, broadcast text, photos or videos to every user, and track activity with charts. Message history is capped to keep storage flat on free tiers.",
+      "stack": ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "Chart.js"],
+      "links": {
+        "code": "https://github.com/udit065/telegram-dashboard-backend",
+        "frontend": "https://github.com/udit065/telegram-dashboard-frontend"
+      }
+    },
+    {
+      "slug": "your-growth",
+      "title": "Your Growth",
+      "category": "Mobile",
+      "featured": true,
+      "description": "Daily check-in app that helps you stay consistent. You answer one question a day and see your history, and it nudges you when you're about to miss twice in a row. Backed by an Express + MongoDB API on Render.",
+      "stack": ["React Native", "Expo", "Express", "MongoDB"],
+      "links": {
+        "code": "https://github.com/udit065/your-growth-frontend",
+        "api": "https://github.com/udit065/your-growth-backend"
+      }
+    },
+    {
+      "slug": "snj-orders",
+      "title": "SNJ Orders",
+      "category": "Full-stack",
+      "featured": true,
+      "description": "Order tracker built for a manufacturing business. A read-only bridge next to Tally Prime syncs sales and purchase orders to a login-protected site, so staff can see what's pending, sent and overdue without touching Tally.",
+      "stack": ["Python", "FastAPI", "Tally Prime", "Jinja"],
+      "links": { "code": "https://github.com/udit065/snj-orders" }
+    },
+    {
+      "slug": "repzone",
+      "title": "RepZone",
+      "category": "Mobile",
+      "featured": true,
+      "description": "Home-workout app with a simple motto: train anywhere, stay consistent. Pick a body part, browse the exercises for it and follow GIF demonstrations. Dark UI, works offline.",
+      "stack": ["React Native", "Expo", "React Navigation"],
+      "links": { "code": "https://github.com/udit065/RepZone" }
+    },
+    {
+      "slug": "ledger-helper",
+      "title": "Ledger-Helper",
+      "category": "Full-stack",
+      "featured": false,
+      "description": "Client-management dashboard for tax consultants. Add clients and manage their details through a REST API.",
+      "stack": ["Next.js", "TypeScript", "Express", "MongoDB", "Tailwind"],
+      "links": { "code": "https://github.com/udit065/Ledger-Helper" }
+    },
+    {
+      "slug": "fakestore",
+      "title": "FakeStore",
+      "category": "Frontend",
+      "featured": false,
+      "description": "E-commerce storefront with a product catalog, category filters, product pages and a cart managed with the Context API.",
+      "stack": ["React", "Context API", "MUI", "Tailwind"],
+      "links": {
+        "live": "https://fakestore065.netlify.app/",
+        "code": "https://github.com/udit065/fakestore-e-commerce"
+      }
+    },
+    {
+      "slug": "world-explorer",
+      "title": "World Explorer",
+      "category": "Frontend",
+      "featured": false,
+      "description": "Explore every country, with search, filtering by continent, detail pages and dark mode. Powered by the REST Countries API.",
+      "stack": ["React", "Redux Toolkit", "MUI", "Tailwind"],
+      "links": {
+        "live": "https://worldexplorer065.netlify.app/",
+        "code": "https://github.com/udit065/country-app"
+      }
+    },
+    {
+      "slug": "q-tv",
+      "title": "Q-TV",
+      "category": "Frontend",
+      "featured": false,
+      "description": "Responsive movie streaming UI that pulls movies from the TMDb API, with skeleton loading and trailer pop-ups.",
+      "stack": ["React", "MUI", "TMDb API"],
+      "links": {
+        "live": "https://stream065.netlify.app/",
+        "code": "https://github.com/udit065/netflix"
+      }
+    },
+    {
+      "slug": "excel-clone",
+      "title": "Excel Clone",
+      "category": "Frontend",
+      "featured": false,
+      "description": "Spreadsheet in the browser with formulas that update dependent cells, multiple sheets, and save, open and download.",
+      "stack": ["JavaScript", "HTML", "CSS"],
+      "links": { "code": "https://github.com/udit065/Excel-Clone" }
+    }
+  ],
+  "skills": [
+    { "group": "Frontend", "items": ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "Redux Toolkit", "Tailwind CSS", "Material UI", "HTML5 / CSS3"] },
+    { "group": "Backend", "items": ["Node.js", "Express", "NestJS", "REST APIs", "Socket.IO", "Microservices", "Python / FastAPI"] },
+    { "group": "Data", "items": ["MongoDB", "Mongoose", "SQL / MySQL", "Redis", "Prisma ORM", "Firebase"] },
+    { "group": "Mobile & tools", "items": ["React Native", "Expo", "Git", "Render", "Netlify", "Vercel"] }
+  ]
+}
