@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=fff" alt="Tailwind CSS"/>
   <img src="https://img.shields.io/badge/Express-000?logo=express&logoColor=fff" alt="Express"/>
   <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=fff" alt="MongoDB"/>
-  <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT license"/>
 </p>
 
 ![Portfolio hero section](docs/screenshot-hero.png)
@@ -82,9 +81,6 @@ my-portfolio/
 ├── netlify.toml     frontend deploy config
 └── render.yaml      API deploy config
 ```
-
-## 📄 License
-[MIT](LICENSE) © Udit Yadav
 
 ---
 **Udit Yadav** · [GitHub](https://github.com/udit065) · [LinkedIn](https://www.linkedin.com/in/udit-yadav065) · udityadav133@gmail.com
