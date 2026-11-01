@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-ink: #0b0f17;
+  --color-panel: #111827;
+  --color-line: #1f2937;
+  --color-accent: #34d399;
+  --color-accent-2: #22d3ee;
+}
+
+html { background: var(--color-ink); }
+body { @apply bg-ink text-slate-300 font-sans antialiased; }
+::selection { background: color-mix(in srgb, var(--color-accent) 35%, transparent); color: white; }
+
+@utility section { @apply mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-28; }
+@utility eyebrow { @apply font-mono text-sm text-accent; }
+@utility h2 { @apply mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-white; }
+@utility chip { @apply rounded-full border border-line bg-panel/60 px-3 py-1 text-xs font-medium text-slate-300; }
+@utility btn { @apply inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-ink; }
+@utility btn-primary { @apply btn bg-accent text-ink hover:bg-emerald-300; }
+@utility btn-ghost { @apply btn border border-line text-slate-200 hover:border-accent hover:text-white; }
+@utility card { @apply rounded-2xl border border-line bg-panel/60 backdrop-blur; }
+
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }

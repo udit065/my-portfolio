@@ -1,26 +1,34 @@
-# Simplefolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/simplefolio)
+# Udit Yadav · Portfolio
 
-## A minimal portfolio template for Developers!
+My personal portfolio, built with the **MERN** stack.
 
-<h2 align="center">
-  <img src="https://github.com/cobiwave/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
-  <br>
-</h2>
+- **Frontend** (`client/`): React 18, Vite and Tailwind CSS v4, in a dark, responsive single page.
+- **Backend** (`server/`): Express, MongoDB and Mongoose. It serves projects from the database and stores contact-form messages.
+- **Content** (`shared/portfolio.json`): one file holds the profile, experience, projects and skills. Edit it to update the site.
 
-To view the demo: **[click here](https://the-simplefolio.netlify.app/)**
+## Run locally
+```bash
+npm run install:all
+cp server/.env.example server/.env   # add your MongoDB URI
+npm run dev:server                   # http://localhost:5000
+npm run dev:client                   # http://localhost:5173 (proxies /api to the server)
+```
+The site works without a database too: projects come from `shared/portfolio.json`, and the contact form asks visitors to email instead.
 
-## Technologies used 🛠️
+## API
+| Method | Route | Purpose |
+|---|---|---|
+| GET | `/api/health` | Health check and DB status |
+| GET | `/api/portfolio` | All content from `shared/portfolio.json` |
+| GET | `/api/projects` | Projects from MongoDB, or from the JSON as a fallback |
+| POST | `/api/contact` | Save a message (validated, rate-limited, honeypot) |
 
-- [Parcel](https://parceljs.org/) - Bundler
-- [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) - Frontend component library
-- [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [ScrollReveal.js](https://scrollrevealjs.org/) - JavaScript library
-- [Tilt.js](https://gijsroge.github.io/tilt.js/) - JavaScript tiny parallax library
+To load the projects into MongoDB, run `npm run seed`.
 
-## Original Authors
+## Deploy (free tiers)
+1. **MongoDB Atlas:** create a free M0 cluster and copy the connection string.
+2. **API on Render:** New → Blueprint → pick this repo. `render.yaml` sets it up. Set `MONGO_URI`, and set `CLIENT_URL` to your frontend URL.
+3. **Frontend on Vercel:** import the repo, set the root directory to `client`, and set `VITE_API_URL` to the Render URL.
 
-- **Jacobo Martinez** - [https://github.com/cobiwave](https://github.com/cobiwave)
-
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## Updating content
+Edit `shared/portfolio.json`, then run `npm run seed` to sync projects to MongoDB. The resume lives at `client/public/Udit-Yadav-Resume.pdf`.
